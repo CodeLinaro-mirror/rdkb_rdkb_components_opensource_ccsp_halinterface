@@ -706,6 +706,11 @@ typedef enum {
     wifi_countrycode_ZA, /**< SOUTH AFRICA */
     wifi_countrycode_ZM, /**< ZAMBIA */
     wifi_countrycode_ZW, /**< ZIMBABWE */
+    wifi_countrycode_AX, /**< ALAND_ISLANDS */
+    wifi_countrycode_BL, /**< SAINT_BARTHELEMY */
+    wifi_countrycode_CW, /**< CURACAO */
+    wifi_countrycode_MF, /**< SAINT_MARTIN */
+    wifi_countrycode_SX, /**< SINT_MAARTEN */
     wifi_countrycode_max /**< Max number of country code */
 } wifi_countrycode_type_t;
 
