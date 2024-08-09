@@ -1075,8 +1075,8 @@ typedef struct _wifi_associated_dev3
 
        UINT  cli_MaxDownlinkRate; /**< The Max data transmit rate in Mbps for the access point to the associated device. */
        UINT  cli_MaxUplinkRate;   /**<  The Max data transmit rate in Mbps for the associated device to the access point. */
-       wifi_ul_mu_stats_t  cli_DownlinkMuStats;
-       wifi_dl_mu_stats_t  cli_UplinkMuStats;
+       wifi_dl_mu_stats_t  cli_DownlinkMuStats;
+       wifi_ul_mu_stats_t  cli_UplinkMuStats;
        wifi_twt_dev_info_t cli_TwtParams; /**< TWT sessions that the device has joined */
 
        /* To facilitate retrieval of CSI data for specific associated client, an existing RDK-B Wi-Fi HAL 
