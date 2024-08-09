@@ -609,7 +609,7 @@ INT wifi_applyRadioSettings(INT radioIndex);
 /**
 * @brief  Enables CTS protection for the radio used by this Access Point.
 *
-* @param[in] apIndex  Access Point index
+* @param[in] radioIndex  Radio index
 * @param[in] enable   CTS protection enable value
 *
 * @return The status of the operation
@@ -623,7 +623,7 @@ INT wifi_applyRadioSettings(INT radioIndex);
 * calls. It should probably just send a message to a driver event handler task.
 *
 */
-INT wifi_setRadioCtsProtectionEnable(INT apIndex, BOOL enable);          //P3 
+INT wifi_setRadioCtsProtectionEnable(INT radioIndex, BOOL enable);          //P3 
 
 /* wifi_setRadioObssCoexistenceEnable() function */
 /**
@@ -649,7 +649,7 @@ INT wifi_setRadioObssCoexistenceEnable(INT apIndex, BOOL enable);
 /**
 * @brief Sets the fragmentation threshold in bytes for the radio used by this Access Point.
 *
-* @param[in] apIndex    Access Point index
+* @param[in] radioIndex    Radio index
 * @param[in] threshold  Fragmentation Threshold value
 *
 * @return The status of the operation
@@ -663,7 +663,7 @@ INT wifi_setRadioObssCoexistenceEnable(INT apIndex, BOOL enable);
 * calls. It should probably just send a message to a driver event handler task.
 *
 */
-INT wifi_setRadioFragmentationThreshold(INT apIndex, UINT threshold);    //P3 
+INT wifi_setRadioFragmentationThreshold(INT radioIndex, UINT threshold);    //P3 
 
 /* wifi_setRadioSTBCEnable() function */
 /**

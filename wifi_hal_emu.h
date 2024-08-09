@@ -2491,7 +2491,7 @@ INT wifi_factoryResetAP(int apIndex); 	//Restore AP paramters to default without
 /**
 * @description Enables CTS protection for the radio used by this AP
 *
-* @param apIndex - Access Point index
+* @param radioIndex - Radio index
 * @param enable - CTS protection enable value
 *
 * @return The status of the operation
@@ -2505,7 +2505,7 @@ INT wifi_factoryResetAP(int apIndex); 	//Restore AP paramters to default without
 * calls. It should probably just send a message to a driver event handler task.
 *
 */
-INT wifi_setRadioCtsProtectionEnable(INT apIndex, BOOL enable);          //P3 // enables CTS protection for the radio used by this AP
+INT wifi_setRadioCtsProtectionEnable(INT radioIndex, BOOL enable);          //P3 // enables CTS protection for the radio used by this AP
 
 /* wifi_setRadioObssCoexistenceEnable() function */
 /**
@@ -2533,7 +2533,7 @@ INT wifi_setRadioObssCoexistenceEnable(INT apIndex, BOOL enable);        // enab
 * @description Sets the fragmentation threshold in bytes for the radio used by this 
 AP.
 *
-* @param apIndex - Access Point index
+* @param radioIndex - Radio index
 * @param threshold - Fragmentation Threshold value
 *
 * @return The status of the operation
@@ -2547,7 +2547,7 @@ AP.
 * calls. It should probably just send a message to a driver event handler task.
 *
 */
-INT wifi_setRadioFragmentationThreshold(INT apIndex, UINT threshold);    //P3 // sets the fragmentation threshold in bytes for the radio used by this ap
+INT wifi_setRadioFragmentationThreshold(INT radioIndex, UINT threshold);    //P3 // sets the fragmentation threshold in bytes for the radio used by this ap
 
 /* wifi_setRadioSTBCEnable() function */
 /**
