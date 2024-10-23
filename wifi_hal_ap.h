@@ -387,6 +387,15 @@ typedef enum {
     WIFI_EAP_TYPE_EXPANDED = 254 /* RFC 3748 */
 } wifi_eap_t;
 
+typedef enum {
+    WIFI_EAP_PHASE2_EAP,
+    WIFI_EAP_PHASE2_MSCHAPV2,
+    WIFI_EAP_PHASE2_MSCHAP,
+    WIFI_EAP_PHASE2_PAP,
+    WIFI_EAP_PHASE2_CHAP,
+    WIFI_EAP_PHASE2_GTC
+} phase2_type;
+
 /** @} */  //END OF GROUP WIFI_HAL_TYPES
 
 /**
@@ -2503,6 +2512,7 @@ typedef struct {
     UINT            identity_req_retry_interval;
     UINT            server_retries;
     wifi_eap_t      eap_type;
+    phase2_type     phase2;
 } __attribute__((packed)) wifi_radius_settings_t;
 
 typedef enum {
