@@ -2617,6 +2617,11 @@ typedef struct {
     char minimum_advertised_mcs[32];
     char sixGOpInfoMinRate[32];
     char client_deny_assoc_info[45];
+    int  time_ms;
+    int  min_num_mgmt_frames;
+    char tcm_exp_weightage[32];
+    char tcm_gradient_threshold[32];
+    char tcm_client_deny_assoc_info[64];
     wifi_vap_name_t vap_name;
 } __attribute__((packed)) wifi_preassoc_control_t;
 
